@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+이름 : 2승준
+나이 : 26살
+으르렁컹컹
 </body>
 </html>
