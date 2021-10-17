@@ -8,6 +8,7 @@
 </head>
 <body>
 최현호입니다.
-<a href="">ben.jsp</a>
+<a href="Ben.jsp">ben.jsp</a>
+<a href="bk.jsp">bk.jsp</a>
 </body>
 </html>
