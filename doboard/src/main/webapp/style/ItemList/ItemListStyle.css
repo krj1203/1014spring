@@ -1,0 +1,32 @@
+.info_goods .name{
+	overflow: hidden;
+    max-height: 50px;
+    margin-top: 12px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+.info_goods .price{
+	display: block;
+    padding-top: 9px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+}
+.info_goods .cost{
+	display: block;
+    padding-top: 5px;
+    font-size: 14px;
+    color: #999;
+    line-height: 18px;
+    text-decoration: line-through;
+}
+.info_goods .dc{
+	padding-right: 8px;
+    font-weight: 800;
+    font-size: 16px;
+    color: #fa622f;
+    line-height: 20px;
+}
