@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="www.naver.com">이정영</a>
+<a href="www.daum.net">다음</a>
 </body>
 </html>
