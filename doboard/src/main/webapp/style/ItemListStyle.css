@@ -1,0 +1,125 @@
+.MainIntroTitle {
+	width: 100%;
+	height: 41px;
+	margin-bottom: 34px;
+}
+
+.MainIntroTitle .TitleDiv {
+	width: 300px;
+	height: 41px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.MainIntroTitle span {
+	position: relative;
+	font-size: 28px;
+	text-align: center;
+	color: black;
+	font-weight: 700;
+}
+
+.MainIntroContain {
+	width: 1070px;
+	margin: 0 auto;
+}
+
+.foodList {
+	overflow: hidden;
+	width: 1070px;
+}
+
+.foodList li {
+	float: left;
+	width: 33%;
+	height: 682px;
+	padding: 25px 18px 0 0;
+}
+
+.foodList li .foodImg {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 430px;
+	background-color: #f9f8f9
+}
+
+.foodList li img {
+	width: 100%;
+	vertical-align: top;
+	transition: all .5s ease-in-out;
+}
+
+.foodList li .info {
+	display: block;
+	padding: 14px 10px 10px 0;
+}
+
+.foodList li .info .name {
+	display: block;
+	overflow: hidden;
+	max-height: 58px;
+	font-weight: 400;
+	font-size: 20px;
+	color: #333;
+	line-height: 29px;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	word-wrap: break-word;
+}
+
+.foodList li .info .cost {
+	display: block;
+	padding-top: 7px;
+	font-size: 18px;
+	line-height: 29px;
+}
+
+.foodList li .info .dc {
+	padding-right: 2px;
+	font-weight: 800;
+	color: #fa622f;
+}
+
+.foodList li .info .price {
+	font-weight: 800;
+	color: #333;
+}
+
+.foodList li .info .origin {
+	display: block;
+	font-size: 16px;
+	color: #999;
+	text-decoration: line-through;
+}
+
+.foodList li .info .desc {
+	display: block;
+	padding-top: 11px;
+	font-size: 13px;
+	color: #999;
+	line-height: 19px;
+}
+.Maincategory ul.categoryList{
+	    width: 1050px;
+    max-width: 1050px;
+    padding: 0 0 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0;
+}
+.Maincategory ul.categoryList li{
+	display: inline-block;
+    padding: 0 5px 20px;
+}
+.Maincategory ul.categoryList li a.Menu{
+	display: inline-block;
+    height: 40px;
+    padding: 9px 20px 0 19px;
+    border: 1px solid #f7f7f6;
+    border-radius: 20px;
+    background-color: #b8bfcc;
+    font-size: 14px;
+    line-height: 18px;
+}
