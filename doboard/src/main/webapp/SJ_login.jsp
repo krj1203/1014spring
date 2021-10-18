@@ -130,7 +130,7 @@
 				<div id="userMenu">
 					<ul class="list_menu">
 						<li class="menu none_sub menu_join"><a
-							href="/shop/member/join.php" class="link_menu">회원가입</a></li>
+							href="/mydo/SJ_new.jsp" class="link_menu">회원가입</a></li>
 						<li class="menu none_sub menu_login"><a
 							href="/shop/member/login.php" class="link_menu">로그인</a> <!----></li>
 						<!---->
@@ -320,7 +320,7 @@
 												<span class="txt_type">로그인</span>
 											</button>
 										</form>
-										<a href="/shop/member/join.php" class="btn_type2 btn_member"><span
+										<a href="/mydo/SJ_new.jsp" class="btn_type2 btn_member"><span
 											class="txt_type">회원가입</span></a>
 									</div>
 								</div>
