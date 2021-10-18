@@ -74,19 +74,12 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		var boffset = $("#gnb").offset();
-		var foodoffset = $("#shellSubTitle").offset();
 		$(window).scroll(function(){
 			if($(document).scrollTop()>boffset.top){
 				$("#gnb").addClass("navFixed");	
 			}
 			else{
 				$("#gnb").removeClass("navFixed");	
-			}
-			if($(document).scrollTop()+$("#gnb").height()>foodoffset.top){
-				$("#shellSubTitle").addClass("navFixed2");
-			}
-			else{
-				$("#shellSubTitle").removeClass("navFixed2");
 			}
 		});
 	});
