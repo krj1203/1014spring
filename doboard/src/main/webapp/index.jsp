@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -61,7 +62,7 @@
 <link rel="styleSheet" href="style/style3.css">
 <link rel="styleSheet" href="style/style4.css">
 <link rel="styleSheet" href="style/brn_qnbStyle.css">
-<link rel="styleSheet" href="style/ItemList/ItemListStyle.css">
+<link rel="styleSheet" href="style/ItemListStyle.css">
 
 
 <style>
@@ -289,65 +290,101 @@
 								style="width: 100%; height: 100%; object-fit: cover">
 							<!-- <div class="shell_ani" style="width: 10%; height: inherit; background: none; background: linear-gradient(to right, rgba(225, 225, 225, 0), rgba(255, 255, 255, .1), rgba(255, 255, 255, 0))"> -->
 						</div>
-						<div id="shellSubTitle"
-							style="width: 100%; height: 41px; margin-bottom: 34px;">
-							<div align="center"
-								style="width: 300px; height: 41px; margin: 0 auto; overflow: hidden;">
-								<span
-									style="position: relative; font-size: 28px; text-align: center; color: black; font-weight: 700;">
-									이 상품 어때요? </span>
-								<!-- <div class="shell_ani"
-									style="width: 10%; height: inherit; background: none; background: linear-gradient(to right, rgba(225, 225, 225, 0), rgba(255, 255, 255, .1), rgba(255, 255, 255, 0))">
-								</div> -->
+						<!-- 이 상품 어때요? -->
+						<div class="MainIntroTitle">
+							<div class="TitleDiv" align="center">
+								<span>이 상품 어때요?</span>
 							</div>
 						</div>
-						<div id="shellSubContainer"
-							style="width: 1050px; height: 506px; margin: 0 auto 80px;">
-							<div
-								style="width: 249px; height: 506px; margin-right: 18px; float: left; overflow: hidden;">
-								<!-- 제품 사진 -->
-								<div
-									style="width: 249px; height: 320px; margin-bottom: 11px; overflow: hidden; background: #eee;">
-									<img src="img/Item/foodItem.png"
-										style="width: 100%; height: 100%; object-fit: cover">
-									<!-- <div class="shell_ani"
-										style="width: 10%; height: 320px; margin-bottom: 11px; background: none; background: linear-gradient(to right, rgba(225, 225, 225, 0), rgba(255, 255, 255, .1), rgba(255, 255, 255, 0))"></div> -->
-								</div>
-								<!-- 가격 표기 장소 -->
-								<div style="width: 249px; height: 72px; overflow: hidden;">
-									<div class="info_goods">
-										<span class="name"><a class="txt">[종가집] 포기김치 2.3kg</a></span>
-										<span class="price"> <span class="dc">5%</span> 19,475원
-										</span> <span class="cost">20,500원</span>
-									</div>
-									<!-- <div class="shell_ani"
-										style="width: 10%; height: 72px; background: none; background: linear-gradient(to right, rgba(225, 225, 225, 0), rgba(255, 255, 255, .1), rgba(255, 255, 255, 0) -->
-									)">
+						<div class="MainIntroContain">
+							<ul class="foodList">
+								<c:forEach begin="1" end="3" step="1">
+									<li>
+										<div class="foodImg">
+											<a href="#"><img src="img/Item/foodItem.png"></a>
+										</div>
+										<a class="info" href="#">
+											<span class="name">[네이처] 오이 묶음</span>
+											<span class="cost">
+												<span class="dc">36%</span>
+												<span class="price">7,500원</span>
+												<span class="origin">11,800원</span>
+												<span class="desc">오이는 별로 맛없음</span>
+											</span>
+										</a>
+									</li>
+								</c:forEach>
+							</ul>
+						</div>
+						<!-- 놓치면 후회할 가격 -->
+						<div class="MainIntroTitle">
+							<div class="TitleDiv" align="center">
+								<span>놓치면 후회할 가격 > </span>
+							</div>
+						</div>
+						<div class="MainIntroContain">
+							<ul class="foodList">
+								<c:forEach begin="1" end="3" step="1">
+									<li>
+										<div class="foodImg">
+											<a href="#"><img src="img/Item/foodItem.png"></a>
+										</div>
+										<a class="info" href="#">
+											<span class="name">[네이처] 오이 묶음</span>
+											<span class="cost">
+												<span class="dc">36%</span>
+												<span class="price">7,500원</span>
+												<span class="origin">11,800원</span>
+												<span class="desc">오이는 별로 맛없음</span>
+											</span>
+										</a>
+									</li>
+								</c:forEach>
+							</ul>
+						</div>
+						<!-- MD -->
+						<div class="Maincategory">
+							<div class="MainIntroTitle">
+								<div class="TitleDiv" align="center">
+									<span>MD추천</span>
 								</div>
 							</div>
-							<div
-								style="width: 249px; height: 506px; margin-right: 18px; float: left; overflow: hidden;">
-								<!-- 제품 사진 -->
-								<div
-									style="width: 249px; height: 320px; margin-bottom: 11px; overflow: hidden; background: #eee;">
-									<img src="img/Item/foodItem.png"
-										style="width: 100%; height: 100%; object-fit: cover">
-									<!-- <div class="shell_ani"
-										style="width: 10%; height: 320px; margin-bottom: 11px; background: none; background: linear-gradient(to right, rgba(225, 225, 225, 0), rgba(255, 255, 255, .1), rgba(255, 255, 255, 0))"></div> -->
-								</div>
-								<!-- 가격 표기 장소 -->
-								<div style="width: 249px; height: 72px; overflow: hidden;">
-									<div class="info_goods">
-										<span class="name"><a class="txt">[종가집] 포기김치 2.3kg</a></span>
-										<span class="price"> <span class="dc">5%</span> 19,475원
-										</span> <span class="cost">20,500원</span>
-									</div>
-									<!-- <div class="shell_ani"
-										style="width: 10%; height: 72px; background: none; background: linear-gradient(to right, rgba(225, 225, 225, 0), rgba(255, 255, 255, .1), rgba(255, 255, 255, 0) -->
-									)">
-								</div>
+							<div class="categoryMenu">
+								<ul class="categoryList">
+									<li>
+										<a class="Menu" href="#">채소</a>
+									</li>
+									<li>
+										<a class="Menu" href="#">과일ㆍ견과ㆍ쌀</a>
+									</li>
+									<li>
+										<a class="Menu" href="#">육류</a>
+									</li>
+									<li>
+										<a class="Menu" href="#">유제품</a>
+									</li>
+								</ul>
 							</div>
-
+							<div class="MainIntroContain">
+								<ul class="foodList">
+									<c:forEach begin="1" end="3" step="1">
+										<li>
+											<div class="foodImg">
+												<a href="#"><img src="img/Item/foodItem.png"></a>
+											</div>
+											<a class="info" href="#">
+												<span class="name">[네이처] 오이 묶음</span>
+												<span class="cost">
+													<span class="dc">36%</span>
+													<span class="price">7,500원</span>
+													<span class="origin">11,800원</span>
+													<span class="desc">오이는 별로 맛없음</span>
+												</span>
+											</a>
+										</li>
+									</c:forEach>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
