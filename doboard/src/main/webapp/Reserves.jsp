@@ -298,66 +298,45 @@
 								1:1 문의하기</a>
 						</div>
 						<!-- ================================================= -->
-						<div class="page_section section_coupon">
-							<div id="lacoupon-area">
-								<div id="lacoupon">
-									<div id="lacoupon_pc_page">
-										<div class="title">
-											<h2>쿠폰</h2>
-										</div>
-										<section class="couponRegister">
-											<input type="text" placeholder="쿠폰을 입력해주세요" value="">
-											<button type="submit">쿠폰 등록</button>
-											<span>쿠폰에 하이픈("-")이 포함되어 있을 경우 하이픈("-")을 반드시 입력해주세요.</span>
-										</section>
-										<section class="couponList">
-											<div id="lacoupon_table_description">
-												<div>
-													<span class="icon"></span><span class="inform">쿠폰은
-														적용 가능한 상품이 따로 적용되어 있는 경우 해당 상품 구매 시에만 사용이 가능합니다.</span>
-												</div>
-												<span class="availableCoupon">사용가능쿠폰: 0장</span>
-											</div>
-											<table id="lacoupon_table">
-												<caption>쿠폰 상세 내역</caption>
-												<colgroup>
-													<col style="width: auto;">
-													<col style="width: 70px;">
-													<col style="width: 100px;">
-													<col style="width: 150px;">
-													<col style="width: 100px;">
-												</colgroup>
-												<thead id="lacoupon_table_header">
-													<tr>
-														<th class="name">쿠폰명</th>
-														<th>기능</th>
-														<th>할인/적립</th>
-														<th>사용가능기간</th>
-														<th>사용여부</th>
-													</tr>
-												</thead>
-												<tbody class="couponList">
-													<tr>
-														<td class="noCoupon" colspan="5">쿠폰 내역이 존재하지 않습니다.</td>
-													</tr>
-												</tbody>
-											</table>
-										</section>
-									</div>
-								</div>
-							</div>
+						<div class="head_aticle">
+							<h2 class="tit">
+								적립금 <span class="tit_sub">보유하고 계신 적립금의 내역을 한 눈에 확인 하실 수
+									있습니다.</span>
+							</h2>
 						</div>
-
-					</div>
-
-
-				</div>
-
-				<jsp:include page="footer.jsp"></jsp:include><!-- footer부분 -->
-	</div>
-	<a href="#top" id="pageTop">맨 위로가기</a>
-
-
-	<iframe name="ifrmHidden" id="ifrmHidden" src="about:blank"
-		style="display: none; width: 100%; height: 600px;"></iframe>
+						<div id="viewPointList">
+							<div class="point_header">
+								<div class="point_view">
+									<h3 class="tit">현재 적립금</h3>
+									<strong class="point">0 <span class="won">원</span></strong>
+								</div>
+								<span class="disappear"><span class="subject no_day">
+										소멸예정 적립금 <!---->
+								</span> <span class="num">0 원</span> <!----></span>
+							</div>
+							<table class="tbl tbl_type1">
+								<caption style="display: none;">적립 사용 내역 상세보기</caption>
+								<colgroup>
+									<col style="width: 120px;">
+									<col style="width: auto;">
+									<col style="width: 122px;">
+									<col style="width: 140px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>날짜</th>
+										<th class="info">내용</th>
+										<th>유효기간</th>
+										<th>금액</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td colspan="4" class="no_data">적립금 내역이 존재하지 않습니다.</td>
+									</tr>
+								</tbody>
+							</table>
+							<!---->
+						</div>
+</body>
 </html>
