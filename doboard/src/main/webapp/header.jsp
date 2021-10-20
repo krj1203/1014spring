@@ -53,7 +53,7 @@
 
 				<div id="headerLogo" class="layout-wrapper">
 					<h1 class="logo">
-						<a href="/" class="link_main"> <span id="gnbLogoContainer"></span>
+						<a href="index.jsp" class="link_main"> <span id="gnbLogoContainer"></span>
 							<img src="img/logo_x2.png" alt="마켓컬리 로고">
 						</a>
 					</h1>
@@ -73,10 +73,10 @@
 									<li class="menu1" class="on"><a href="#none"><span
 											class="ico"></span><span class="txt">전체 카테고리</span></a></li>
 									<li class="menu2"><a class="link new "
-										href="/shop/goods/goods_list.php?category=038"><span
+										href="newGoodsPage.jsp"><span
 											class="txt">신상품</span></a></li>
 									<li class="menu3"><a class="link best "
-										href="/shop/goods/goods_list.php?category=029"><span
+										href="BestGoods.jsp"><span
 											class="txt">베스트</span></a></li>
 									<li class="menu4"><a class="link bargain "
 										href="/shop/goods/goods_list.php?list=sale"><span

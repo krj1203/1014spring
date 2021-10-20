@@ -5018,7 +5018,7 @@ input[type=search]::-webkit-clear-button, input[type=email]::-webkit-clear-butto
 }
 
 #bnrCategory {
-	display: none;
+	/* display: none; */
 	position: relative;
 	margin: 0 auto 20px
 }
