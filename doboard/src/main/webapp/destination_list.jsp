@@ -275,24 +275,25 @@
 							<h2 class="tit_snb">마이컬리</h2>
 							<div class="inner_snb">
 								<ul class="list_menu">
-									<li><a href="/shop/mypage/mypage_orderlist.php">주문 내역</a></li>
+									<li><a href="/shop/mypage/mypage_orderlist.php">주문 내역</a>
+									</li>
 
 									<li><a href="#none"
 										onclick="KurlyTrackerLink('/shop/mypage/mypage_gift.php', 'select_my_kurly_gift_list')">선물
 											내역</a></li>
-									<li><a href="#none"
+									<li class="on"><a href="#none"
 										onclick="KurlyTrackerLink('/shop/mypage/destination/list.php', 'select_shipping_address_list')">배송지
 											관리</a></li>
-									<li><a href="/shop/mypage/mypage_review.php">상품 후기</a></li>
+									<li><a href="/shop/mypage/mypage_review.php">상품
+											후기</a></li>
 									<li><a href="/shop/mypage/product_inquiry.php">상품 문의</a></li>
 									<li><a href="#none"
 										onclick="KurlyTrackerLink('/shop/mypage/mypage_emoney.php', 'select_my_kurly_point_history', {selection_type: 'mypage'})">적립금</a>
 									</li>
-									<li class="on"><a href="#none"
+									<li><a href="#none"
 										onclick="KurlyTrackerLink('/shop/mypage/mypage_coupon.php', 'select_my_kurly_coupon_list', {selection_type: 'mypage'})">쿠폰</a>
 									</li>
-									<li><a href="/shop/member/myinfo.php">개인 정보
-											수정</a></li>
+									<li><a href="/shop/member/myinfo.php">개인 정보 수정</a></li>
 								</ul>
 							</div>
 							<a href="/shop/mypage/mypage_qna_register.php?mode=add_qna"
@@ -300,56 +301,55 @@
 								1:1 문의하기</a>
 						</div>
 						<!-- ================================================= -->
-						<div class="page_section section_coupon">
-							<div id="lacoupon-area">
-								<div id="lacoupon">
-									<div id="lacoupon_pc_page">
-										<div class="title">
-											<h2>쿠폰</h2>
-										</div>
-										<section class="couponRegister">
-											<input type="text" placeholder="쿠폰을 입력해주세요" value="">
-											<button type="submit">쿠폰 등록</button>
-											<span>쿠폰에 하이픈("-")이 포함되어 있을 경우 하이픈("-")을 반드시 입력해주세요.</span>
-										</section>
-										<section class="couponList">
-											<div id="lacoupon_table_description">
-												<div>
-													<span class="icon"></span><span class="inform">º쿠폰은
-														적용 가능한 상품이 따로 적용되어 있는 경우 해당 상품 구매 시에만 사용이 가능합니다.</span>
-												</div>
-												<span class="availableCoupon">사용가능쿠폰: 0장</span>
-											</div>
-											<table id="lacoupon_table">
-												<caption>쿠폰 상세 내역</caption>
-												<colgroup>
-													<col style="width: auto;">
-													<col style="width: 70px;">
-													<col style="width: 100px;">
-													<col style="width: 150px;">
-													<col style="width: 100px;">
-												</colgroup>
-												<thead id="lacoupon_table_header">
-													<tr>
-														<th class="name">쿠폰명</th>
-														<th>기능</th>
-														<th>할인/적립</th>
-														<th>사용가능기간</th>
-														<th>사용여부</th>
-													</tr>
-												</thead>
-												<tbody class="couponList">
-													<tr>
-														<td class="noCoupon" colspan="5">쿠폰 내역이 존재하지 않습니다.</td>
-													</tr>
-												</tbody>
-											</table>
-										</section>
-									</div>
+						<div id="" class="page_section section_destination">
+							<div class="head_aticle">
+								<h2 class="tit">
+									배송지 관리 <span id="addrListInfo" class="tit_sub">배송지에 따라
+										상품 정보가 달라질 수 있습니다.</span>
+								</h2>
+								<div class="new_address">
+									<button type="button" class="btn" id="newAddressAdd">
+										<img src="https://res.kurly.com/pc/ico/2006/ico_add_16x16.svg"
+											alt="" class="ico"> 새 배송지 추가
+									</button>
 								</div>
 							</div>
-						</div>
+							<span class="destination_add screen_out"></span>
+							<div id="tblParent" class="type_select">
+								<table class="tbl tbl_type1">
+									<thead>
+										<tr>
+											<th class="tit_select">선택</th>
+											<th class="tit_address">주소</th>
+											<th class="tit_receive">받으실 분</th>
+											<th class="tit_phone">연락처</th>
+											<th class="tit_delivery">배송유형</th>
+											<th class="tit_modify">수정</th>
+										</tr>
+									</thead>
+									<tbody id="addrList">
+										<tr>
+											<td class="select type_radio"><label
+												class="skin_checkbox"><input type="radio"
+													name="addrNo" data-delivery-type="direct" value="11987977"
+													checked=""><span class="ico"></span><span
+													class="screen_out">선택하기</span></label></td>
+											<td class="address"><span class="badge_default">기본
+													배송지</span>
+											<p class="addr">IT BANK</p></td>
+											<td class="name"></td>
+											<td class="phone"></td>
+											<td><span class="delivery star">샛별배송</span></td>
+											<td><button type="button" class="ico modify"
+													data-addr-no="11987977" data-addr-type="D"
+													data-is-current-addr="true">수정하기</button></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 
+						</div>
+						<!-- ======================================================= -->
 					</div>
 
 					<jsp:include page="footer.jsp"></jsp:include><!-- footer부분 -->

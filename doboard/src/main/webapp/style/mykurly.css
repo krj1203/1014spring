@@ -1,0 +1,419 @@
+@charset "UTF-8";
+
+#lacoupon_pc_page .title {
+    padding: 5px 0 34px;
+}
+
+#lacoupon_pc_page .couponRegister {
+    padding: 19px 0 14px 29px;
+    border: 1px solid #ddd;
+}
+
+#lacoupon_pc_page .couponRegister input {
+    width: 210px;
+    height: 34px;
+    padding: 0 10px;
+    margin-right: 10px;
+    border: 1px solid #514859;
+    font-size: 12px;
+    color: #000;
+    line-height: 32px;
+    outline: none;
+    letter-spacing: -.6px;
+}
+
+#lacoupon_pc_page .couponRegister button {
+    width: 140px;
+    height: 34px;
+    border: none;
+    background-color: #5f0080;
+    font-size: 12px;
+    color: #fff;
+    line-height: 32px;
+}
+
+#lacoupon_pc_page .couponRegister span {
+    display: block;
+    padding-top: 13px;
+    font-size: 12px;
+    color: #f03f40;
+    line-height: 18px;
+}
+
+#lacoupon_table_description {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-weight: 400;
+    padding: 35px 0 15px;
+}
+
+#lacoupon_table_description div {
+    display: flex;
+    align-items: center;
+}
+
+#lacoupon_table_description .availableCoupon {
+    float: right;
+    font-size: 13px;
+    margin-right: 6px;
+}
+
+#lacoupon_table {
+    width: 100%;
+}
+
+#lacoupon_table_header {
+    border-top: 2px solid #333;
+    border-bottom: 1px solid #333;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -.5px;
+    line-height: 20px;
+}
+
+#lacoupon_table_header th.name {
+    padding-left: 10px;
+    text-align: left;
+}
+
+#lacoupon_table_header th {
+    padding: 20px 0;
+}
+
+
+.page_aticle.aticle_type2 .page_section {
+    float: right;
+    width: 820px;
+}
+
+.board-container {
+    height: 100%;
+}
+
+.page_aticle button, .page_aticle input, .page_aticle select, .page_aticle * {
+    font-family: noto sans;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.board-header-container {
+    padding-bottom: 38px;
+    font-family: Noto Sans;
+}
+
+.list-description {
+    font-family: Noto Sans;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999;
+}
+
+.list-description a {
+    font-weight: 700;
+    color: #999;
+    text-decoration: underline;
+}
+
+.board-header-container {
+    padding-bottom: 38px;
+    font-family: Noto Sans;
+}
+
+.list-description li {
+    padding-left: 12px;
+}
+
+.board-item-container.my_kurly {
+    width: 820px;
+}
+
+.board-item-container {
+    position: relative;
+    font-family: Noto Sans;
+    border-top: 2px solid #333;
+}
+
+.board-item-container .inquiry-board-header {
+    display: table;
+    table-layout: fixed;
+    border-bottom: 1px solid #333;
+}
+
+.board-item-container .inquiry-board-header>div {
+    display: table-cell;
+    text-align: center;
+    padding: 18px 0 20px;
+    width: 100px;
+    font-family: Noto Sans;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    color: #333;
+}
+
+.board-item-container.my_kurly .inquiry-board-header div:nth-child(2) {
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.board-item-container .board-list, .board-item-container .inquiry-notice-list {
+    position: relative;
+}
+
+.board-item-container .board-list>li.inquiry-empty, .board-item-container .inquiry-notice-list>li.inquiry-empty {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    padding: 117px 0;
+    text-align: center;
+    cursor: default;
+}
+
+.board-item-container .board-list, .board-item-container .inquiry-notice-list {
+    position: relative;
+}
+
+.board-inquiry-area {
+    position: relative;
+}
+
+.paging-navigation {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.paging-navigation>button:disabled.paging-prev {
+    margin-right: 12px;
+    background-image: url(https://res.kurly.com/kurly/img/2021/direction_prev_disabled_24_44_gray.svg);
+}
+
+.paging-navigation>button:disabled.paging-next {
+    background-image: url(https://res.kurly.com/kurly/img/2021/direction_next_disabled_24_44_gray.svg);
+}
+
+
+.paging-navigation>button:disabled {
+    border-color: #eee;
+    cursor: default;
+}
+
+.paging-navigation>button {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    margin: 0;
+    background: 0;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.paging-navigation>button span {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0,0,0,0);
+}
+
+.section_destination .tbl_type1 tr:first-child td, .section_destination .tbl_type1 td {
+    height: 90px;
+    font-size: 14px;
+    color: #333;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.type_radio label {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.type_radio input[type="radio"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.section_destination .tbl_type1 .type_radio input[type="radio"] + .ico {
+    margin: 0;
+    vertical-align: middle;
+}
+
+
+.section_destination .tbl_type1 tr:first-child td, .section_destination .tbl_type1 td {
+    height: 90px;
+    font-size: 14px;
+    color: #333;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.section_destination .tbl_type1 .badge_default {
+    display: block;
+    width: 74px;
+    height: 22px;
+    margin-bottom: 7px;
+    border-radius: 11px;
+    background-color: #f7f7f7;
+    font-weight: 700;
+    font-size: 12px;
+    color: #666;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.section_destination .tbl_type1 .addr {
+    padding: 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    text-align: left;
+    word-break: break-all;
+    padding-left: 10px;
+}
+
+.type_radio input[type="radio"] + .ico {
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    border: 0 none;
+    background: url(https://res.kurly.com/mobile/service/common/2003/ico_checkbox.png?v=1) no-repeat 50% 50%;
+    background-size: 24px 24px;
+    vertical-align: -7px;
+}
+
+.type_radio input[type="radio"]:checked + .ico {
+    background: url(https://res.kurly.com/mobile/service/common/2003/ico_checkbox_checked.png) no-repeat 50% 50%;
+    background-size: 24px 24px;
+}
+
+.section_destination .tbl_type1 .type_radio input[type="radio"] + .ico {
+    margin: 0;
+    vertical-align: middle;
+}
+
+.page_aticle .tbl_type1 tr:first-child td {
+    border-top: 1px solid #333;
+}
+
+.section_destination .type_select .select {
+    display: table-cell;
+}
+
+.section_destination .tbl_type1 .modify {
+    width: 24px;
+    height: 24px;
+    border: 0 none;
+    background: url(https://res.kurly.com/mobile/ico/2006/ico_modify.png) no-repeat 50% 50%;
+    font-size: 0;
+    line-height: 0;
+}
+
+.section_destination .new_address .btn {
+    position: absolute;
+    right: 3px;
+    bottom: 7px;
+    border: 0 none;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    text-align: right;
+}
+
+.page_aticle .head_aticle .tit {
+    height: 36px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333;
+    letter-spacing: -.5px;
+}
+
+.section_destination .new_address {
+    position: relative;
+}
+
+
+.section_destination .type_select .tit_address {
+    padding-left: 0;
+    text-indent: -8px;
+}
+
+.section_destination .tbl_type1 .tit_address {
+    width: auto;
+    padding-left: 10px;
+}
+
+.section_destination .tbl_type1 th {
+    padding: 17px 0 20px;
+    vertical-align: top;
+}
+
+.section_destination .tbl_type1 {
+    border-bottom: 1px solid #f4f4f4;
+}
+.page_aticle .tbl_type1 th {
+    padding: 20px 0;
+    border-top: 2px solid #333;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    letter-spacing: -.5px;
+}
+
+.page_aticle .tbl th, .page_aticle .tbl td {
+    word-break: break-all;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+.page_aticle .tbl {
+    width: 100%;
+}
+
+.page_aticle.aticle_type2 .page_section {
+    float: right;
+    width: 820px;
+}
+
+.page_aticle button, .page_aticle input, .page_aticle select, .page_aticle * {
+    font-family: noto sans;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.page_aticle button, .page_aticle input, .page_aticle select, .page_aticle * {
+    font-family: noto sans;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.section_destination .type_select .tit_select {
+    display: table-cell;
+}
+
+.section_destination .tbl_type1 .tit_address {
+    width: auto;
+    padding-left: 10px;
+}
