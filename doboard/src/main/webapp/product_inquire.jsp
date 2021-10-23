@@ -8,7 +8,7 @@
 
 <!-- 여기부터 해당 페이지의 css 추가하면 됨-->
 <link rel="styleSheet" href="style/ItemListStyle.css">
-<link rel="styleSheet" href="style/mykurly.css">
+<link rel="styleSheet" href="style/product_inquire.css">
 </head>
 <body class="main-index" oncontextmenu="return false"
 	ondragstart="return false" onselectstart="return !disableSelection">
@@ -284,11 +284,11 @@
 										onclick="KurlyTrackerLink('/shop/mypage/destination/list.php', 'select_shipping_address_list')">배송지
 											관리</a></li>
 									<li><a href="/shop/mypage/mypage_review.php">상품 후기</a></li>
-									<li><a href="/shop/mypage/product_inquiry.php">상품 문의</a></li>
+									<li class=on><a href="/shop/mypage/product_inquiry.php">상품 문의</a></li>
 									<li><a href="#none"
 										onclick="KurlyTrackerLink('/shop/mypage/mypage_emoney.php', 'select_my_kurly_point_history', {selection_type: 'mypage'})">적립금</a>
 									</li>
-									<li class="on"><a href="#none"
+									<li><a href="#none"
 										onclick="KurlyTrackerLink('/shop/mypage/mypage_coupon.php', 'select_my_kurly_coupon_list', {selection_type: 'mypage'})">쿠폰</a>
 									</li>
 									<li><a href="/shop/member/myinfo.php">개인 정보
@@ -300,56 +300,47 @@
 								1:1 문의하기</a>
 						</div>
 						<!-- ================================================= -->
-						<div class="page_section section_coupon">
-							<div id="lacoupon-area">
-								<div id="lacoupon">
-									<div id="lacoupon_pc_page">
-										<div class="title">
-											<h2>쿠폰</h2>
+						<div class="page_section section_review">
+							<div class="head_aticle">
+								<h2 class="tit">상품문의</h2>
+							</div>
+							<div class="board-container">
+								<div id="productInquiryBoard" data-boardpagesize="10"
+									data-boardtype="my_kurly" data-devicetype="pc">
+									<div class="board-header-container">
+										<ul class="list-description">
+											<li>상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은 사전동의 없이 담당
+												게시판으로 이동될 수 있습니다.</li>
+											<li>배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이컬리 내 <a
+												href="/shop/mypage/mypage_qna.php">1:1 문의</a>에 남겨주세요.
+											</li>
+										</ul>
+									</div>
+									<div class="board-item-container my_kurly">
+										<div class="inquiry-board-header">
+											<div></div>
+											<div style="width: 520px;">제목</div>
+											<div>작성일</div>
+											<div>답변상태</div>
 										</div>
-										<section class="couponRegister">
-											<input type="text" placeholder="쿠폰을 입력해주세요" value="">
-											<button type="submit">쿠폰 등록</button>
-											<span>쿠폰에 하이픈("-")이 포함되어 있을 경우 하이픈("-")을 반드시 입력해주세요.</span>
-										</section>
-										<section class="couponList">
-											<div id="lacoupon_table_description">
-												<div>
-													<span class="icon"></span><span class="inform">º쿠폰은
-														적용 가능한 상품이 따로 적용되어 있는 경우 해당 상품 구매 시에만 사용이 가능합니다.</span>
-												</div>
-												<span class="availableCoupon">사용가능쿠폰: 0장</span>
+										<ul class="board-list">
+											<li class="inquiry-empty">작성한 상품 문의가 없습니다.</li>
+										</ul>
+										<div class="board-inquiry-area">
+											<div class="paging-navigation">
+												<button type="button" class="paging-prev" disabled="">
+													<span>이전</span>
+												</button>
+												<button type="button" class="paging-next" disabled="">
+													<span>다음</span>
+												</button>
 											</div>
-											<table id="lacoupon_table">
-												<caption>쿠폰 상세 내역</caption>
-												<colgroup>
-													<col style="width: auto;">
-													<col style="width: 70px;">
-													<col style="width: 100px;">
-													<col style="width: 150px;">
-													<col style="width: 100px;">
-												</colgroup>
-												<thead id="lacoupon_table_header">
-													<tr>
-														<th class="name">쿠폰명</th>
-														<th>기능</th>
-														<th>할인/적립</th>
-														<th>사용가능기간</th>
-														<th>사용여부</th>
-													</tr>
-												</thead>
-												<tbody class="couponList">
-													<tr>
-														<td class="noCoupon" colspan="5">쿠폰 내역이 존재하지 않습니다.</td>
-													</tr>
-												</tbody>
-											</table>
-										</section>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-
+						<!-- ======================================================= -->
 					</div>
 
 					<jsp:include page="footer.jsp"></jsp:include><!-- footer부분 -->
