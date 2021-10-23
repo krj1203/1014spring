@@ -38,7 +38,7 @@
 						<div style="padding-top: 26px;">
 							<div class="MainIntroTitle">
 								<div class="TitleDiv" align="center">
-									<span>신상품</span>
+									<span>알뜰쇼핑</span>
 								</div>
 							</div>
 						</div>
