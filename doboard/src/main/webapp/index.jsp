@@ -11,7 +11,7 @@
 </head>
 <body class="main-index" oncontextmenu="return false"
 	ondragstart="return false" onselectstart="return !disableSelection">
-
+	<a href="#top" id="gotoTop">맨 위로 가기</a>
 	<div id="wrap" class="">
 		<div id="pos_scroll"></div>
 		<div id="container">

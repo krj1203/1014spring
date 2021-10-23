@@ -1,0 +1,17 @@
+@charset "UTF-8";
+#gotoTop{
+overflow: hidden;
+    position: fixed;
+    z-index: 300;
+    right: 31px;
+    bottom: 15px;
+    width: 58px;
+    height: 58px;
+    border: 0;
+    background: url(../img/topButton-remove.png) no-repeat 50% 50%;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    opacity: 0.6;
+    transition: background .5s;
+}

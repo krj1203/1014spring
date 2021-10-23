@@ -1,0 +1,25 @@
+@charset "UTF-8";
+#sortbar .sort_menu{
+	overflow: hidden;
+    padding-top: 39px;
+    margin-bottom: -5px;
+}
+#sortbar .count{
+	float:left;
+}
+.list_ability{
+	font-family: noto sans;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+#sortbar .user_sort{
+	overflow: hidden;
+}
+#sortbar .list{
+	float:right;
+}
+#sortbar .list li{
+	position:relative;
+	float:left;
+	padding:0 10px 0 8px;
+}
