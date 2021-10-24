@@ -7,7 +7,7 @@
 			<div class="grade_user">
 				<div class="grade_wrap">
 					<div class="grade_logo class0">일반</div>
-					<strong class="name">도경석님</strong>
+					<strong class="name">홍길동님</strong>
 				</div>
 				
 				<div class="grade_bnenfit">
@@ -31,7 +31,7 @@
 						</div>
 						<div class="spacer"></div>
 							<p class="info"> 
-								648 원 <span class="expire"> 소멸 예정 0 원 </span>
+								0원 <span class="expire"> 소멸 예정 0 원 </span>
 							</p>
 					</a> 
 					

@@ -1,0 +1,213 @@
+@charset "EUC-KR";
+/* 2cc 전용 라디오 버튼 이미지를 체크박스처럼... */
+.type_radio input[type="radio"] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.type_radio input[type="radio"]+.ico {
+	display: inline-block;
+	position: relative;
+	width: 24px;
+	height: 24px;
+	margin-right: 12px;
+	border: 0 none;
+	background:
+		url(https://res.kurly.com/mobile/service/common/2003/ico_checkbox.png?v=1)
+		no-repeat 50% 50%;
+	background-size: 24px 24px;
+	vertical-align: -7px;
+}
+
+.type_radio input[type="radio"]:focus {
+	outline: 0;
+}
+
+.type_radio input[type="radio"]:checked+.ico {
+	background:
+		url(https://res.kurly.com/mobile/service/common/2003/ico_checkbox_checked.png)
+		no-repeat 50% 50%;
+	background-size: 24px 24px;
+}
+
+.type_radio input[type="radio"]:disabled+.ico {
+	background:
+		url(https://res.kurly.com/mobile/service/common/2003/ico_checkbox_disabled.png)
+		no-repeat 50% 50%;
+	background-size: 24px 24px;
+}
+
+.type_radio label {
+	font-size: 14px;
+	line-height: 22px;
+}
+
+/* 배송지관리 */
+.section_destination .new_address {
+	position: relative
+}
+
+.section_destination .new_address .btn {
+	position: absolute;
+	right: 3px;
+	bottom: 7px;
+	border: 0 none;
+	background-color: #fff;
+	font-weight: 700;
+	font-size: 16px;
+	color: #333;
+	line-height: 24px;
+	letter-spacing: -0.5px;
+	text-align: right
+}
+
+.section_destination .new_address .ico {
+	margin-right: 2px;
+	vertical-align: -2px
+}
+
+.section_destination .tbl_type1 {
+	border-bottom: 1px solid #f4f4f4
+}
+
+.section_destination .tbl_type1 th {
+	padding: 17px 0 20px;
+	vertical-align: top
+}
+
+.section_destination .tbl_type1 .tit_select {
+	display: none;
+	width: 60px
+}
+
+.section_destination .tbl_type1 .tit_address {
+	width: auto;
+	padding-left: 10px
+}
+
+.section_destination .tbl_type1 .tit_receive {
+	width: 120px
+}
+
+.section_destination .tbl_type1 .tit_phone {
+	width: 100px
+}
+
+.section_destination .tbl_type1 .tit_delivery {
+	width: 100px
+}
+
+.section_destination .tbl_type1 .tit_modify {
+	width: 60px
+}
+
+.section_destination .tbl_type1 tr:first-child td, .section_destination .tbl_type1 td
+	{
+	height: 90px;
+	font-size: 14px;
+	color: #333;
+	line-height: 22px;
+	letter-spacing: -0.4px;
+	vertical-align: middle;
+	text-align: center
+}
+
+.section_destination .tbl_type1 .type_radio input[type="radio"]+.ico {
+	margin: 0;
+	vertical-align: middle
+}
+
+.section_destination .tbl_type1 .select {
+	display: none
+}
+
+.section_destination .tbl_type1 .address {
+	padding: 20px 10px 20px 20px;
+	text-align: left
+}
+
+.section_destination .tbl_type1 .badge_default {
+	display: block;
+	width: 74px;
+	height: 22px;
+	margin-bottom: 7px;
+	border-radius: 11px;
+	background-color: #f7f7f7;
+	font-weight: 700;
+	font-size: 12px;
+	color: #666;
+	line-height: 22px;
+	letter-spacing: 0;
+	text-align: center
+}
+
+.section_destination .tbl_type1 .addr {
+	padding: 0;
+	font-size: 16px;
+	color: #333;
+	line-height: 24px;
+	letter-spacing: -0.3px;
+	text-align: left;
+	word-break: break-all
+}
+
+.section_destination .tbl_type1 .star {
+	color: #5f0080
+}
+
+.section_destination .tbl_type1 .regular {
+	color: #666
+}
+
+.section_destination .tbl_type1 .none {
+	color: #ccc
+}
+
+.section_destination .tbl_type1 .modify {
+	width: 24px;
+	height: 24px;
+	border: 0 none;
+	background: url(https://res.kurly.com/mobile/ico/2006/ico_modify.png)
+		no-repeat 50% 50%;
+	font-size: 0;
+	line-height: 0
+}
+
+.section_destination .tbl_type1 tr:first-child td.empty,
+	.section_destination .tbl_type1 .empty {
+	padding: 123px 0 124px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: 0;
+	text-align: center
+}
+/* 선택영역이 있는 경우 */
+.section_destination .type_select .tit_select {
+	display: table-cell
+}
+
+.section_destination .type_select .tit_address {
+	padding-left: 0;
+	text-indent: -8px
+}
+
+.section_destination .type_select .select {
+	display: table-cell
+}
+
+.section_destination .type_select .address {
+	padding-left: 2px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) , only screen and
+		(min-device-pixel-ratio: 1.5) , only screen and (min-resolution:
+	1.5dppx) {
+	.section_destination .tbl_type1 .modify {
+		background:
+			url("https://res.kurly.com/mobile/ico/2006/ico_modify_x2.png")
+			no-repeat 50% 50%;
+		background-size: 24px 24px
+	}
+}
