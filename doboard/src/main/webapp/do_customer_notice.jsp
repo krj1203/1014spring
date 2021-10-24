@@ -98,7 +98,7 @@
 										<tbody>
 											<tr>
 												<td class="input_txt">
-												<img src="img/do/do_customer_notice1">검색어</td>
+												<img src="img/do/do_customer_notice1.gif">검색어</td>
 												<td class="stxt">
 												<input type="checkbox" name="search[name]">이름
 												<input type="checkbox" name="search[subject]">제목
@@ -108,7 +108,7 @@
 												<td>
 													<div class="search_bt">
 														<a href="javascript:document.frmList.submit()">
-														<img src="/shop/data/skin/designgj/images/board/search.png" align="absmiddle"></a>
+														<img src="img/do/do_customer_notice2.gif" align="absmiddle"></a>
 														<input type="text" name="search[word]" value="" required="">
 													</div>
 												</td>
