@@ -1,0 +1,411 @@
+@charset "EUC-KR";
+#lacoupon_pc_page .title {
+    padding: 5px 0 34px
+}
+#lacoupon_pc_page .title h2 {
+    height: 36px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #333;
+    line-height: 36px;
+    letter-spacing: -0.5px
+}
+#lacoupon_pc_page .couponRegister {
+    padding: 19px 0 14px 29px;
+    border: 1px solid #ddd
+}
+#lacoupon_pc_page .couponRegister input {
+    width: 210px;
+    height: 34px;
+    padding: 0 10px;
+    margin-right: 10px;
+    border: 1px solid #514859;
+    font-size: 12px;
+    color: #000;
+    line-height: 32px;
+    outline: none;
+    letter-spacing: -0.6px
+}
+#lacoupon_pc_page .couponRegister button {
+    width: 140px;
+    height: 34px;
+    border: none;
+    background-color: #5f0080;
+    font-size: 12px;
+    color: #fff;
+    line-height: 32px
+}
+#lacoupon_pc_page .couponRegister span {
+    display: block;
+    padding-top: 13px;
+    font-size: 12px;
+    color: #f03f40;
+    line-height: 18px
+}
+#lacoupon_table_description {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-weight: 400;
+    padding: 35px 0 15px
+}
+#lacoupon_table_description div {
+    display: flex;
+    align-items: center
+}
+#lacoupon_table_description div .icon {
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: #514859;
+    margin-right: 6px
+}
+#lacoupon_table_description div .inform {
+    font-size: 12px
+}
+#lacoupon_table_description .availableCoupon {
+    float: right;
+    font-size: 13px;
+    margin-right: 6px
+}
+#lacoupon_table {
+    width: 100%
+}
+#lacoupon_table .noCoupon {
+    padding: 50px 0;
+    font-size: 13px;
+    color: #757575;
+    text-align: center;
+    border-bottom: 1px solid #f4f4f4
+}
+#lacoupon_table_header {
+    border-top: 2px solid #333;
+    border-bottom: 1px solid #333;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -0.5px;
+    line-height: 20px
+}
+#lacoupon_table_header th {
+    padding: 20px 0
+}
+#lacoupon_table_header th.name {
+    padding-left: 10px;
+    text-align: left
+}
+#lacoupon_pc {
+    border-bottom: 1px solid #f4f4f4
+}
+#lacoupon_pc.used > td,
+#lacoupon_pc.used span {
+    color: #949296 !important
+}
+#lacoupon_pc td {
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 16px 0 14px
+}
+#lacoupon_pc .couponName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px
+}
+#lacoupon_pc .couponName .name {
+    padding-bottom: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    color: #000
+}
+#lacoupon_pc .couponName .hurdle {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333
+}
+#lacoupon_pc .couponName .showCondition {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.75;
+    text-decoration: underline;
+    color: #5f0080;
+    padding-top: 9px;
+    cursor: pointer
+}
+#lacoupon_pc .available {
+    color: purple
+}
+#lacoupon_pc_condition_modal .modalTitle {
+    padding: 0;
+    color: #333;
+    line-height: 1.67;
+    letter-spacing: -1px
+}
+#lacoupon_pc_condition_modal .modalTitle .titleText {
+    font-size: 24px;
+    font-weight: 500
+}
+#lacoupon_pc_condition_modal .modalContent {
+    padding: 0;
+    height: fit-content;
+    overflow: unset
+}
+#lacoupon_pc_condition_modal .modalActions {
+    padding: 33px 0 0
+}
+#lacoupon_pc_condition_modal .confirmButton {
+    width: 380px;
+    height: 56px;
+    border-radius: 6px;
+    background-color: #5f0080;
+    color: #fff;
+    border: none;
+    font-size: 16px
+}
+#lacoupon_pc_condition_modal .conditionArea {
+    padding: 16px 0 0
+}
+#lacoupon_pc_condition_modal .conditionArea:nth-child(2) {
+    padding: 25px 0 0
+}
+#lacoupon_pc_condition_modal .conditionTitle {
+    font-size: 18px;
+    color: #333
+}
+#lacoupon_pc_condition_modal .conditionList {
+    font-size: 16px;
+    color: #666
+}
+#lacoupon_pc_condition_modal .conditionList li {
+    padding-top: 7px;
+    line-height: 1.13
+}
+#lacoupon_pc_condition_modal .conditionList li:first-child {
+    padding-top: 12px
+}
+#lacoupon_pc_condition_modal .conditionList li:before {
+    content: "\22c5 "
+}
+#lacoupon_mobile_page {
+    height: inherit
+}
+#lacoupon_mobile_page .mobileCouponList {
+    margin-bottom: 30px;
+    padding: 0 10px
+}
+#lacoupon_mobile_page .emptyCouponMessage {
+    padding-top: 120px;
+    font-size: 16px;
+    color: #999;
+    text-align: center
+}
+#lacoupon_mobile {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    margin-top: 12px
+}
+#lacoupon_mobile .couponContent.used {
+    background-color: #f7f7f7
+}
+#lacoupon_mobile .couponContent.used div {
+    color: #d9d9d9
+}
+#lacoupon_mobile .couponContent {
+    padding: 16px 13px 13px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px
+}
+#lacoupon_mobile .couponContent > div {
+    width: calc(100% - 7px)
+}
+#lacoupon_mobile .couponContent .circleLine {
+    display: inline-block;
+    position: absolute;
+    right: -7.5px;
+    top: calc(50% - 7.5px);
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px
+}
+#lacoupon_mobile .couponContent .circleLine:after {
+    content: "";
+    position: absolute;
+    right: -4px;
+    top: -1px;
+    width: 10px;
+    height: 20px;
+    background-color: #fff
+}
+#lacoupon_mobile .couponContent .benefit {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.05;
+    color: #1a1a1a
+}
+#lacoupon_mobile .couponContent .name {
+    padding: 10px 0 6px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.33
+}
+#lacoupon_mobile .couponContent .hurdle {
+    padding-bottom: 1px;
+    font-size: 13px;
+    line-height: 1.38;
+    color: #666
+}
+#lacoupon_mobile .couponContent .tail {
+    width: 100%;
+    padding-top: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline
+}
+#lacoupon_mobile .couponContent .expiration {
+    font-size: 13px;
+    line-height: 1.38;
+    font-weight: 500;
+    color: #5f0080
+}
+#lacoupon_mobile .couponContent .useComplete {
+    color: #333
+}
+#lacoupon_mobile .couponContent .conditionOption {
+    font-size: 13px;
+    line-height: 1.62;
+    color: #4c4c4c;
+    display: flex;
+    align-items: center
+}
+#lacoupon_mobile .couponContent .conditionOption .arrow {
+    display: block;
+    margin-left: 5px;
+    width: 14px;
+    height: 10px;
+    background: url('https://res.kurly.com/mobile/ico/2109/couponlist-ico-arrow.png') no-repeat 50% 50%;
+    background-size: 14px 10px;
+    transition: all 0.5s ease;
+    filter:brightness(0.5)
+}
+#lacoupon_mobile .couponContent .openArrow {
+    transform: rotate(180deg)
+}
+#lacoupon_mobile .couponCondition {
+    padding: 17px 20px 15px;
+    border-top: 1px solid #eee;
+    background-color: #fafafa;
+    border-radius: 0 0 5px 5px
+}
+#lacoupon_mobile .couponCondition .conditionTitle {
+    padding-top: 8px;
+    font-size: 13px;
+    line-height: normal;
+    color: #4c4c4c
+}
+#lacoupon_mobile .couponCondition .conditionTitle:first-child {
+    padding-top: 0
+}
+#lacoupon_mobile .couponCondition .conditionList {
+    font-size: 12px;
+    line-height: 1.5;
+    color: grey
+}
+#lacoupon_mobile .couponCondition .conditionList li {
+    padding-top: 1px
+}
+#lacoupon_mobile .couponCondition .conditionList li:first-child {
+    padding-top: 3px
+}
+#lacoupon_mobile .couponCondition .conditionList li:before {
+    content: "\22c5 "
+}
+#lacoupon_enroll_button {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    --safe-area-inset-bottom: env(safe-area-inset-bottom);
+    bottom: calc(49px + var(--safe-area-inset-bottom));
+    padding: 8px 12px;
+    background: linear-gradient(0deg,#fff,hsla(0,0%,100%,0))
+}
+#lacoupon_enroll_button button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 52px;
+    border: 1px solid #5f0080;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #fff;
+    color: #5f0080
+}
+#lacoupon_enroll_button img {
+    height: 16px;
+    width: 16px;
+    margin-right: 3px
+}
+#lacoupon_mobile_modal .modalTitle {
+    padding: 19px 24px 13px
+}
+#lacoupon_mobile_modal .modalTitle .titleText {
+    font-size: 22px
+}
+#lacoupon_mobile_modal .modalContent {
+    padding: 0 24px
+}
+#lacoupon_mobile_modal .modalActions {
+    justify-content: center;
+    padding: 24px 17px 16px
+}
+#lacoupon_mobile_modal .modalActions > button {
+    width: 100%
+}
+#lacoupon_mobile_modal button {
+    width: 143px;
+    height: 48px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 6px
+}
+#lacoupon_mobile_modal .cancelButton {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333
+}
+#lacoupon_mobile_modal .enrollButton {
+    border: none;
+    background-color: #5f0080;
+    color: #fff
+}
+#lacoupon_enroll_form input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333;
+    outline: 0
+}
+#lacoupon_enroll_form input:focus {
+    border: 1px solid #333
+}
+#lacoupon_enroll_form p {
+    font-size: 12px;
+    padding-top: 10px;
+    color: #999;
+    line-height: 1.5
+}

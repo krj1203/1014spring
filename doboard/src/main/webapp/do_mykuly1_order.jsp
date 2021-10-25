@@ -24,9 +24,8 @@
 					<jsp:include page="sidemenu.jsp"></jsp:include><!-- sidemenu부분 -->
 					<jsp:include page="myPageTop.jsp"></jsp:include><!-- mypage상단부분 -->
 
-
 					<div class="page_aticle aticle_type2"> <!-- Main시작 -->
-						<jsp:include page="mainLeft.jsp"></jsp:include> <!-- Mainleft -->
+						<jsp:include page="mainLeft.jsp"></jsp:include> <!-- Mainleft부분 -->
 						
 						<div id="viewOrderList" class="page_section section_orderlist">
 							<div class="head_aticle">
@@ -45,7 +44,14 @@
 								</ul>
 							</div>
 							
-							<ul class="list_order">    <!-- 주문내역이 있을경우에 여기에 데이터가 생김 -->
+							<!-- 주문내역이 없을경우 ↓↓↓↓↓↓↓↓ -->
+							<!-- <ul class="list_order"> 
+								<li class="no_data">주문내역이 없습니다.</li>
+							</ul> --> 
+							
+							
+							<!-- 주문내역이 있는경우 ↓↓↓↓↓↓↓↓ -->
+							<ul class="list_order">   
 								<li>
 									<div class="date">2021.06.04 (12시 28분)</div>
 									<div class="order_goods">
@@ -80,7 +86,8 @@
 									</div>
 								</li>
 							</ul>
-							<div class="layout-pagination">
+									
+							<div class="layout-pagination"><!-- 이전, 다음 페이지 처리  -->
 								<div class="pagediv">
 									<a href="#viewOrderList" class="layout-pagination-button layout-pagination-first-page">맨처음 페이지로 가기</a>
 									<a href="#viewOrderList" class="layout-pagination-button layout-pagination-prev-page">이전페이지로 가기</a> 
