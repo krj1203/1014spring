@@ -204,184 +204,56 @@ pace-inactive
 				<div class="container-fluid px-4">
 					<h5 class="mt-4">Dashboard</h5>
 					<br>
-					<div class="row">
-						<div ui-view="" name="naverpay-salesinfo"
-							class="panel-wrap flex-col-6 flex-col-xs-12 order-md-3 order-xs-1">
-							<div class="panel panel-dashboard">
-								<div class="panel-heading">
-									<div class="pull-left">
-										<h3 class="panel-title">주문/배송</h3>
-									</div>
-									<div class="pull-right">
-										<ncp-dashboard-refresh component-name="vm.componentName"
-											refresh-interval="vm.refreshIntervalMinutes"
-											on-block="vm.blockRefresh()" on-refresh="vm.refresh()"
-											nclicks-code="orddel.ref">
-										<span class="text-muted sub-text">최근 19:48</span> <a href=""
-											role="button" class="btn-refresh font-icon-button"
-											ng-click="vm.refresh()" data-nclicks-code="orddel.ref"><i
-											class="fn fn-refresh" aria-hidden="true"></i> <span
-											class="sr-only">새로고침</span></a></ncp-dashboard-refresh>
-									</div>
-								</div>
-								<div class="panel-body flex flex-wrap">
-									<div class="list-wrap deposit-list flex-col-6 flex-col-md-12">
-										<!---->
-										<div ng-if="vm.saleStats &amp;&amp; vm.saleStats.$resolved"
-											class="" style="">
-											<div class="panel-icon-area">
-												<span class="square-ico-area"><i
-													class="seller-icon icon-order" aria-hidden="true"></i></span>
-											</div>
-											<ul class="panel-list">
-												<li><span class="info-title">결제대기</span> <span
-													class="number-area">
-														<!---->
-														<a ng-if="::vm.isDesktop"
-														ui-sref="main.naverpay_sale_unpayment" class="text-number"
-														ng-bind="::vm.saleStats.paymentWaitCases"
-														data-nclicks-code="orddel.paymentwait"
-														href="#/naverpay/sale/unpayment">0</a>
-													<!----> <!---->
-														<span>건</span>
-												</span></li>
-												<li><div class="clearfix">
-														<span class="info-title"><em class="pull-left">신규주문</em>
-															<a href="javascript:void(0)" role="button"
-															class="font-icon-button"
-															uib-popover-html="'<ul class=&quot;seller-ul-list&quot;><li><strong>&amp;apos;선물 수락대기&amp;apos; 상태의 주문 건은 포함되지 않습니다.</strong></li><li><a href=&quot;https://help.sell.smartstore.naver.com/faq/content.help?faqId=3355&quot; target=&quot;_blank&quot; role=&quot;button&quot; class=&quot;btn-link text-primary&quot;><span>그럼
-																	선물 주문은 어디서 확인하나요?<i class=&quot;fn-shopping
-																	fn-shopping-forward2&quot; aria-hidden=&quot;true&quot;></i><span></span></li>
-											</ul>
-											'" popover-trigger="'outsideClick'"
-											popover-placement="bottom" data-nclicks-code="orddel.newtip"><i
-												class="fn fn-info1" aria-hidden="true"></i><span
-												class="sr-only">툴팁</span> </a></span><span class="number-area">
-												<!---->
-												<a ng-if="::vm.isDesktop"
-												ui-sref="main.naverpay_sale_delivery" class="text-number"
-												ng-bind="::vm.saleStats.newOrderCases"
-												data-nclicks-code="orddel.new"
-												href="#/naverpay/sale/delivery">0</a>
-											<!----> <!---->
-												<span>건</span>
-											</span>
-										</div>
-										<div class="clearfix panel-sub-info">
-											<span class="info-title"><em class="sub-icon">⌞</em>
-												오늘출발<a href="javascript:void(0)" role="button"
-												class="font-icon-button"
-												uib-popover-html="'<ul class=&quot;seller-ul-list&quot;><li>&amp;apos;정기구독&amp;apos; 주문건은 &amp;apos;오늘출발&amp;apos;에 포함되지 않습니다.</li></ul>'"
-												popover-trigger="'outsideClick'" popover-placement="bottom"
-												data-nclicks-code="orddel.departtodaytip"><i
-													class="fn fn-info1" aria-hidden="true"></i><span
-													class="sr-only">툴팁</span> </a></span><span class="number-area">
-												<!---->
-												<a ng-if="::vm.isDesktop"
-												ui-sref="main.naverpay_sale_delivery({summaryInfoType : 'TODAY_DISPATCH'})"
-												class="text-number"
-												ng-bind="::vm.saleStats.todayDispatchCases"
-												data-nclicks-code="orddel.departtoday"
-												href="#/naverpay/sale/delivery?summaryInfoType=TODAY_DISPATCH">0</a>
-											<!----> <!---->
-												<span>건</span>
-											</span>
-										</div>
-										<div class="clearfix panel-sub-info">
-											<span class="info-title"><em class="sub-icon">⌞</em>
-												예약구매</span> <span class="number-area">
-												<!---->
-												<a ng-if="::vm.isDesktop"
-												ui-sref="main.naverpay_sale_delivery({summaryInfoType : 'PRE_ORDER'})"
-												class="text-number" ng-bind="::vm.saleStats.preOrderCases"
-												data-nclicks-code="orddel.preord"
-												href="#/naverpay/sale/delivery?summaryInfoType=PRE_ORDER">0</a>
-											<!----> <!---->
-												<span>건</span>
-											</span>
-										</div>
-										<div class="clearfix panel-sub-info">
-											<span class="info-title"><em class="sub-icon">⌞</em>
-												정기구독</span> <span class="number-area">
-												<!---->
-												<a ng-if="::vm.isDesktop"
-												ui-sref="main.naverpay_sale_delivery({summaryInfoType : 'SUBSCRIPTION'})"
-												class="text-number"
-												ng-bind="::vm.saleStats.subscriptionCases"
-												data-nclicks-code="orddel.subscription"
-												href="#/naverpay/sale/delivery?summaryInfoType=SUBSCRIPTION">0</a>
-											<!----> <!---->
-												<span>건</span>
-											</span>
-										</div>
-										</li>
-										</ul>
-									</div>
-									<!---->
-									<!---->
-								</div>
-								<div class="list-wrap delivery-list flex-col-6 flex-col-md-12">
-									<!---->
-									<div ng-if="vm.saleStats &amp;&amp; vm.saleStats.$resolved"
-										class="" style="">
-										<div class="panel-icon-area">
-											<span class="square-ico-area"><i
-												class="seller-icon icon-delivery" aria-hidden="true"></i></span>
-										</div>
-										<ul class="panel-list">
-											<li><span class="info-title">배송준비</span> <span
-												class="number-area">
-													<!---->
-													<a ng-if="::vm.isDesktop"
-													ui-sref="main.naverpay_sale_delivery({summaryInfoType : 'DELIVERY_READY'})"
-													class="text-number"
-													ng-bind="::vm.saleStats.deliveryPreparingCases"
-													data-nclicks-code="orddel.wait"
-													href="#/naverpay/sale/delivery?summaryInfoType=DELIVERY_READY">0</a>
-												<!----> <!---->
-													<span>건</span>
-											</span></li>
-											<li><span class="info-title">배송중</span> <span
-												class="number-area">
-													<!---->
-													<a ng-if="::vm.isDesktop"
-													ui-sref="main.naverpay_sale_delivery_situation({summaryInfoType : 'DELIVERING'})"
-													class="text-number"
-													ng-bind="::vm.saleStats.deliveringCases"
-													data-nclicks-code="orddel.ing"
-													href="#/naverpay/sale/delivery/situation?summaryInfoType=DELIVERING">1</a>
-												<!----> <!---->
-													<span>건</span>
-											</span></li>
-											<li><span class="info-title">배송완료</span> <span
-												class="number-area">
-													<!---->
-													<a ng-if="::vm.isDesktop"
-													ui-sref="main.naverpay_sale_delivery_situation({summaryInfoType : 'DELIVERED'})"
-													class="text-number" ng-bind="::vm.saleStats.deliveredCases"
-													data-nclicks-code="orddel.completed"
-													href="#/naverpay/sale/delivery/situation?summaryInfoType=DELIVERED">0</a>
-												<!----> <!---->
-													<span>건</span>
-											</span></li>
-										</ul>
-									</div>
-									<!---->
-								</div>
+				<div class="row">
+					<div class="col-xl-3 col-md-6">
+						<div class="card bg-primary1 text-black mb-4">
+							<div class="card-body">주문</div>
+							<div
+								class="card-footer d-flex align-items-center justify-content-between">
+								<a class="small text-black stretched-link">
+								 결재대기 <a href="ben_index.jsp" class="cards">0건</a>
+								 신규주문 <a href="ben_index.jsp" class="cards">0건</a>
 							</div>
-							<!---->
-							<!---->
+						</div>
+					</div>
+					<div class="col-xl-3 col-md-6">
+						<div class="card bg-primary1 text-black mb-4">
+							<div class="card-body">배송</div>
+							<div
+								class="card-footer d-flex align-items-center justify-content-between">
+								배송중 <a href="ben_index.jsp" class="cards">0건</a>
+								 배송완료 <a href="ben_index.jsp" class="cards">0건</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-md-6">
+						<div class="card bg-purple text-black mb-4">
+							<div class="card-body">클레임</div>
+							<div
+								class="card-footer d-flex align-items-center justify-content-between">
+								취소요청 <a href="ben_index.jsp" class="cards">0건</a>
+								 반품요청 <a href="ben_index.jsp" class="cards">0건</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-md-6">
+						<div class="card bg-primary1 text-black mb-4">
+							<div class="card-body">리뷰/고객문의</div>
+							<div
+								class="card-footer d-flex align-items-center justify-content-between">
+								리뷰 <a href="ben_index.jsp" class="cards">0건</a>
+								 고객문의 <a href="ben_index.jsp" class="cards">0건</a>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xl-3 col-md-6">
-						<div class="card bg-primary text-white mb-4">
-							<div class="card-body">Primary Card</div>
+						<div class="card bg-pink text-black mb-4">
+							<div class="card-body bg-white">베스트상품</div>
 							<div
 								class="card-footer d-flex align-items-center justify-content-between">
-								<a class="small text-white stretched-link" href="#">View
-									Details</a>
+								<a class="small text-white stretched-link bg-pink" href="#">베스트 상품</a>
 								<div class="small text-white">
 									<i class="fas fa-angle-right"></i>
 								</div>
@@ -389,15 +261,11 @@ pace-inactive
 						</div>
 					</div>
 					<div class="col-xl-3 col-md-6">
-						<div class="card bg-warning text-white mb-4">
-							<div class="card-body">Warning Card</div>
+						<div class="card bg-pink text-black mb-4">
+							<div class="card-body bg-white">등급별 회원 수</div>
 							<div
 								class="card-footer d-flex align-items-center justify-content-between">
-								<a class="small text-white stretched-link" href="#">View
-									Details</a>
-								<div class="small text-white">
-									<i class="fas fa-angle-right"></i>
-								</div>
+								<a class="small text-white stretched-link bg-pink" href="#">회원 졸라많다</a>
 							</div>
 						</div>
 					</div>
@@ -408,9 +276,7 @@ pace-inactive
 								class="card-footer d-flex align-items-center justify-content-between">
 								<a class="small text-white stretched-link" href="#">View
 									Details</a>
-								<div class="small text-white">
-									<i class="fas fa-angle-right"></i>
-								</div>
+								
 							</div>
 						</div>
 					</div>

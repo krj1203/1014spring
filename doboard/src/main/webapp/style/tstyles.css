@@ -11,6 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  --bs-pink: #EB7EA7;
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -210,7 +211,7 @@ strong {
 }
 
 small, .small {
-  font-size: 0.875em;
+  font-size: 1em;
 }
 
 mark, .mark {
@@ -4560,6 +4561,8 @@ textarea.form-control-lg {
 .card-body {
   flex: 1 1 auto;
   padding: 1rem 1rem;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .card-title {
@@ -7389,7 +7392,7 @@ textarea.form-control-lg {
 }
 
 .mb-4 {
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .mb-5 {
@@ -7822,7 +7825,15 @@ textarea.form-control-lg {
   --bs-text-opacity: 1;
 }
 
-.bg-primary {
+.bg-pink {
+  --bs-bg-opacity: 1;
+  background-color: #EB7EA7;
+}
+.bg-primary1 {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+}
+.bg-primary2 {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -11705,59 +11716,8 @@ body {
 }
 
 
+.card-footer>#cards{
+	float:right;
+}
 
 
-
-
-
-
-.flex-panel-wrap .panel-wrap {
-    margin: 0;
-    padding: 5px;
-}
-.flex-col-6 {
-    -ms-flex: 0 0 50%;
-    -webkit-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-*, :after, :before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-div {
-    display: block;
-}
-.seller-dashboard .seller-sub-content {
-    font-size: 14px;
-}
-body {
-    position: relative;
-    height: 100%;
-    min-height: 100%;
-    font-family: 나눔고딕,NanumGothic,Helvetica Neue,Helvetica,AppleSDGothicNeo-Regular,Arial,맑은고딕,malgun gothic,돋움,dotum,sans-serif;
-    line-height: 20px;
-    color: #4d5159;
-    background-color: #edf0f5;
-    font-size: 13px;
-}
-.flex-panel-wrap .panel-wrap .panel {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-.panel-dashboard {
-    position: relative;
-}
-.panel, .panel-seller {
-    border: 1px solid #dbdde2;
-    box-shadow: none;
-}
-.panel-dashboard .panel-heading {
-    padding: 0 25px;
-    border-bottom: 1px solid #e2e6ee;
-}
-.pull-left {
-    float: left!important;
-}
